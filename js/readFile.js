@@ -3,19 +3,7 @@ var lineData1 = [],
     data1Final = [],
     lineData2 = [],
     lineData3 = [],
-    file = [],
     lineDataGroup;
-    file[0] = 'csv/India2011.csv';
-    file[1] = 'csv/IndiaSC2011.csv';
-    file[2] = 'csv/IndiaST2011.csv';
-for (var fileIndex = 0; fileIndex < file.length; fileIndex++) {
-  var data = fs.readFileSync(file[fileIndex],'utf8');
-  lineDataGroup = data.split("\n");
-  for (var index in lineDataGroup) {
-    temp = lineDataGroup[index].split(",");
-    (lineData+"fileIndex+1")[index] = temp[4]+","+temp[5]+","+temp[12];
-  }
-}
 var data1 = fs.readFileSync('csv/India2011.csv','utf8');
 lineDataGroup = data1.split("\n");
 for (var index in lineDataGroup) {
@@ -48,8 +36,8 @@ for (var i = 2; i < 30; i++) {
     }
   }
 }
-    console.log(data1Final);
-    console.log(data1Final.length);
+  //  console.log(data1Final);
+//    console.log(data1Final.length);
     for (var i1 = 0; i1 < data1Final.length; i1++) {
     for (var k = 0; k < lineData2.length; k++) {
       if (data1Final[i1].split(",")[0] === lineData2[k].split(",")[1] && lineData2[k].split(",")[0] === 'Total'){
@@ -57,7 +45,7 @@ for (var i = 2; i < 30; i++) {
       }
     }
 }
-        console.log(data1Final);
+      //  console.log(data1Final);
 
     for (var i2 = 0; i2 < data1Final.length; i2++) {
     for (var l = 0; l < lineData3.length; l++) {
@@ -66,4 +54,13 @@ for (var i = 2; i < 30; i++) {
       }
     }
 }
-        console.log(data1Final);
+  //      console.log(data1Final);
+  var result1 = [];
+  for (var dataIndex = 0; dataIndex < data1Final.length; dataIndex++) {
+    var obj = {};
+    obj.ageGroup =  data1Final[dataIndex].split(",")[0];
+    obj.literatePopulation = data1Final[dataIndex].split(",")[1];
+    result1.push(JSON.stringify(obj));
+  }
+//  console.log(result.length);
+  console.log(result1);
