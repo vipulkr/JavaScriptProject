@@ -1,85 +1,212 @@
-[ '0-6,0',
-  '7,18078426',
-  '8,22836959',
-  '9,20932734',
-  '10,27097602',
-  '11,22752473',
-  '12,25485778',
-  '13,22470207',
-  '14,23157384',
-  '15,23299497',
-  '16,22079806',
-  '17,19179012',
-  '18,24230172',
-  '19,18280414',
-  '20-24,92744730',
-  '25-29,78779525',
-  '30-34,64265391',
-  '35-39,57277557',
-  '40-44,45631240',
-  '45-49,37240564',
-  '50-54,28247046',
-  '55-59,21463974',
-  '60-64,17674268',
-  '65-69,11625376',
-  '70-74,7640218',
-  '75-79,3871311',
-  '80+,4398558',
-  'Age not stated,2898590' ]
-28
-[ '0-6,0',
-  '7,21206172',
-  '8,26888200',
-  '9,24582848',
-  '10,31942474',
-  '11,26692693',
-  '12,29989293',
-  '13,26363045',
-  '14,27157187',
-  '15,27339393',
-  '16,25861916',
-  '17,22395487',
-  '18,28387437',
-  '19,21295321',
-  '20-24,107638383',
-  '25-29,90665845',
-  '30-34,73205801',
-  '35-39,65036723',
-  '40-44,51355522',
-  '45-49,41583740',
-  '50-54,31322939',
-  '55-59,23689487',
-  '60-64,19481191',
-  '65-69,12766150',
-  '70-74,8311432',
-  '75-79,4153253',
-  '80+,4776249',
-  'Age not stated,3310628' ]
-[ '0-6,0',
-  '7,22818573',
-  '8,29011421',
-  '9,26565571',
-  '10,34430703',
-  '11,28806963',
-  '12,32348816',
-  '13,28387474',
-  '14,29171219',
-  '15,29325198',
-  '16,27686321',
-  '17,23886851',
-  '18,30218875',
-  '19,22621208',
-  '20-24,114128000',
-  '25-29,95741848',
-  '30-34,77036519',
-  '35-39,68243458',
-  '40-44,53708523',
-  '45-49,43357916',
-  '50-54,32553475',
-  '55-59,24557099',
-  '60-64,20160842',
-  '65-69,13193461',
-  '70-74,8560705',
-  '75-79,4263104',
-  '80+,4920189',
-  'Age not stated,3459950' ]
+[
+  {
+    "stateCode": "01",
+    "stateName": "State - JAMMU & KASHMIR",
+    "graduateMale": 426555,
+    "graduateFemale": 265929
+  },
+  {
+    "stateCode": "02",
+    "stateName": "State - HIMACHAL PRADESH",
+    "graduateMale": 293449,
+    "graduateFemale": 223652
+  },
+  {
+    "stateCode": "03",
+    "stateName": "State - PUNJAB",
+    "graduateMale": 960456,
+    "graduateFemale": 959213
+  },
+  {
+    "stateCode": "04",
+    "stateName": "State - CHANDIGARH",
+    "graduateMale": 111494,
+    "graduateFemale": 94542
+  },
+  {
+    "stateCode": "05",
+    "stateName": "State - UTTARAKHAND",
+    "graduateMale": 568963,
+    "graduateFemale": 433434
+  },
+  {
+    "stateCode": "06",
+    "stateName": "State - HARYANA",
+    "graduateMale": 1183849,
+    "graduateFemale": 810751
+  },
+  {
+    "stateCode": "07",
+    "stateName": "State - NCT OF DELHI",
+    "graduateMale": 1636077,
+    "graduateFemale": 1282115
+  },
+  {
+    "stateCode": "08",
+    "stateName": "State - RAJASTHAN",
+    "graduateMale": 2461922,
+    "graduateFemale": 1064619
+  },
+  {
+    "stateCode": "09",
+    "stateName": "State - UTTAR PRADESH",
+    "graduateMale": 7086446,
+    "graduateFemale": 3811759
+  },
+  {
+    "stateCode": "10",
+    "stateName": "State - BIHAR",
+    "graduateMale": 2471458,
+    "graduateFemale": 764190
+  },
+  {
+    "stateCode": "11",
+    "stateName": "State - SIKKIM",
+    "graduateMale": 24812,
+    "graduateFemale": 18036
+  },
+  {
+    "stateCode": "12",
+    "stateName": "State - ARUNACHAL PRADESH",
+    "graduateMale": 58823,
+    "graduateFemale": 28114
+  },
+  {
+    "stateCode": "13",
+    "stateName": "State - NAGALAND",
+    "graduateMale": 96513,
+    "graduateFemale": 68531
+  },
+  {
+    "stateCode": "14",
+    "stateName": "State - MANIPUR",
+    "graduateMale": 178447,
+    "graduateFemale": 115688
+  },
+  {
+    "stateCode": "15",
+    "stateName": "State - MIZORAM",
+    "graduateMale": 56437,
+    "graduateFemale": 38959
+  },
+  {
+    "stateCode": "16",
+    "stateName": "State - TRIPURA",
+    "graduateMale": 107556,
+    "graduateFemale": 58240
+  },
+  {
+    "stateCode": "17",
+    "stateName": "State - MEGHALAYA",
+    "graduateMale": 77020,
+    "graduateFemale": 77942
+  },
+  {
+    "stateCode": "18",
+    "stateName": "State - ASSAM",
+    "graduateMale": 718327,
+    "graduateFemale": 411992
+  },
+  {
+    "stateCode": "19",
+    "stateName": "State - WEST BENGAL",
+    "graduateMale": 3463977,
+    "graduateFemale": 1891297
+  },
+  {
+    "stateCode": "20",
+    "stateName": "State - JHARKHAND",
+    "graduateMale": 1039975,
+    "graduateFemale": 492195
+  },
+  {
+    "stateCode": "21",
+    "stateName": "State - ODISHA",
+    "graduateMale": 1303987,
+    "graduateFemale": 661902
+  },
+  {
+    "stateCode": "22",
+    "stateName": "State - CHHATTISGARH",
+    "graduateMale": 799269,
+    "graduateFemale": 417319
+  },
+  {
+    "stateCode": "23",
+    "stateName": "State - MADHYA PRADESH",
+    "graduateMale": 2311433,
+    "graduateFemale": 1279956
+  },
+  {
+    "stateCode": "24",
+    "stateName": "State - GUJARAT",
+    "graduateMale": 2083498,
+    "graduateFemale": 1388297
+  },
+  {
+    "stateCode": "25",
+    "stateName": "State - DAMAN & DIU",
+    "graduateMale": 8774,
+    "graduateFemale": 4575
+  },
+  {
+    "stateCode": "26",
+    "stateName": "State - DADRA & NAGAR HAVELI",
+    "graduateMale": 13880,
+    "graduateFemale": 7899
+  },
+  {
+    "stateCode": "27",
+    "stateName": "State - MAHARASHTRA",
+    "graduateMale": 5730823,
+    "graduateFemale": 3774694
+  },
+  {
+    "stateCode": "28",
+    "stateName": "State - ANDHRA PRADESH",
+    "graduateMale": 4125374,
+    "graduateFemale": 2182506
+  },
+  {
+    "stateCode": "29",
+    "stateName": "State - KARNATAKA",
+    "graduateMale": 2799580,
+    "graduateFemale": 1696871
+  },
+  {
+    "stateCode": "30",
+    "stateName": "State - GOA",
+    "graduateMale": 77010,
+    "graduateFemale": 75121
+  },
+  {
+    "stateCode": "31",
+    "stateName": "State - LAKSHADWEEP",
+    "graduateMale": 2682,
+    "graduateFemale": 1606
+  },
+  {
+    "stateCode": "32",
+    "stateName": "State - KERALA",
+    "graduateMale": 1187364,
+    "graduateFemale": 1474710
+  },
+  {
+    "stateCode": "33",
+    "stateName": "State - TAMIL NADU",
+    "graduateMale": 3495384,
+    "graduateFemale": 2577695
+  },
+  {
+    "stateCode": "34",
+    "stateName": "State - PUDUCHERRY",
+    "graduateMale": 87072,
+    "graduateFemale": 67712
+  },
+  {
+    "stateCode": "35",
+    "stateName": "State - ANDAMAN & NICOBAR ISLANDS",
+    "graduateMale": 13832,
+    "graduateFemale": 10748
+  }
+]
