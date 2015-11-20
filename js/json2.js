@@ -5,7 +5,6 @@ var result2 = [],
   for (var fileIndex = 0, fileLength = file.length; fileIndex < fileLength; fileIndex++) {
     var data = fs.readFileSync(file[fileIndex],'utf8');
     var lineDataGroup = data.split("\n");
-    var lineData = [];
       for (var index = 0, lenLDG = lineDataGroup.length;index < lenLDG; index++) {
         var temp = lineDataGroup[index].split(",");
         if(temp[4] === 'Total' && temp[5] === 'All ages') {
