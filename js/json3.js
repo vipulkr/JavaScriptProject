@@ -9,8 +9,6 @@ var result3 = [],
         var temp = lineDataGroup[index].split(",");
         if(temp[4] === 'Total' && temp[5] === 'All ages') {
           var obj = {};
-        //  var sCode = parseInt(temp[1])-1;
-      //  console.log(sCode);
           obj.tableName = temp[0];
           obj.educationWithoutLevel = temp[15];
           obj.educationBelowPrimary = temp[18];

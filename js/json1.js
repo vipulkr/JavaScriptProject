@@ -60,7 +60,8 @@ for (var i = 2; i < 30; i++) {
     var obj = {};
     obj.ageGroup =  data1Final[dataIndex].split(",")[0];
     obj.literatePopulation = data1Final[dataIndex].split(",")[1];
-    result1.push(JSON.stringify(obj));
+    result1.push(obj);
   }
+  result1 = JSON.stringify(result1, null, 2);
 //  console.log(result.length);
-  console.log(result1);
+ console.log(result1);

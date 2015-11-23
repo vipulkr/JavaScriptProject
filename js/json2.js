@@ -10,11 +10,9 @@ var result2 = [],
         if(temp[4] === 'Total' && temp[5] === 'All ages') {
           var obj = {};
           var sCode = parseInt(temp[1])-1;
-      //  console.log(sCode);
           obj.stateCode = temp[1];
           obj.stateName = temp[3];
           obj.graduateMale = temp[40];
-        //  console.log(temp[40]);
           obj.graduateFemale = temp[41];
           if (!(result2[sCode])){
           result2[sCode] = obj;
