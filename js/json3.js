@@ -10,30 +10,30 @@ var result3 = [],
         if(temp[4] === 'Total' && temp[5] === 'All ages') {
           var obj = {};
           obj.tableName = temp[0];
-          obj.educationWithoutLevel = temp[15];
-          obj.educationBelowPrimary = temp[18];
-          obj.educationPrimary = temp[21];
-          obj.educationMiddle = temp[24];
-          obj.educationMatric = temp[27];
-          obj.educationIntermediate = temp[30];
-          obj.educationNTDiploma = temp[33];
-          obj.educationTDiploma = temp[36];
-          obj.educationGraduate = temp[39];
-          obj.educationUnclassified = temp[42];
+          obj.WithoutLevel = temp[15];
+          obj.BelowPrimary = temp[18];
+          obj.Primary = temp[21];
+          obj.Middle = temp[24];
+          obj.Matric = temp[27];
+          obj.Intermediate = temp[30];
+          obj.NonTechDiploma = temp[33];
+          obj.TechDiploma = temp[36];
+          obj.Graduate = temp[39];
+          obj.Unclassified = temp[42];
           if (!(result3[fileIndex])){
           result3[fileIndex] = obj;
         }
         else{
-          result3[fileIndex].graduateMale = parseInt(result3[fileIndex].educationWithoutLevel)+parseInt(obj.educationWithoutLevel);
-          result3[fileIndex].graduateFemale = parseInt(result3[fileIndex].educationBelowPrimary)+parseInt(obj.educationBelowPrimary);
-          result3[fileIndex].graduateMale = parseInt(result3[fileIndex].educationPrimary)+parseInt(obj.educationPrimary);
-          result3[fileIndex].graduateFemale = parseInt(result3[fileIndex].educationMiddle)+parseInt(obj.educationMiddle);
-          result3[fileIndex].graduateMale = parseInt(result3[fileIndex].educationMatric)+parseInt(obj.educationMatric);
-          result3[fileIndex].graduateFemale = parseInt(result3[fileIndex].educationIntermediate)+parseInt(obj.educationIntermediate);
-          result3[fileIndex].graduateMale = parseInt(result3[fileIndex].educationNTDiploma)+parseInt(obj.educationNTDiploma);
-          result3[fileIndex].graduateFemale = parseInt(result3[fileIndex].educationTDiploma)+parseInt(obj.educationTDiploma);
-          result3[fileIndex].graduateMale = parseInt(result3[fileIndex].educationGraduate)+parseInt(obj.educationGraduate);
-          result3[fileIndex].graduateFemale = parseInt(result3[fileIndex].educationUnclassified)+parseInt(obj.educationUnclassified);
+          result3[fileIndex].WithoutLevel = parseInt(result3[fileIndex].WithoutLevel)+parseInt(obj.WithoutLevel);
+          result3[fileIndex].BelowPrimary = parseInt(result3[fileIndex].BelowPrimary)+parseInt(obj.BelowPrimary);
+          result3[fileIndex].Primary = parseInt(result3[fileIndex].Primary)+parseInt(obj.Primary);
+          result3[fileIndex].Middle = parseInt(result3[fileIndex].Middle)+parseInt(obj.Middle);
+          result3[fileIndex].Matric = parseInt(result3[fileIndex].Matric)+parseInt(obj.Matric);
+          result3[fileIndex].Intermediate = parseInt(result3[fileIndex].Intermediate)+parseInt(obj.Intermediate);
+          result3[fileIndex].NonTechDiploma = parseInt(result3[fileIndex].NonTechDiploma)+parseInt(obj.NonTechDiploma);
+          result3[fileIndex].TechDiploma = parseInt(result3[fileIndex].TechDiploma)+parseInt(obj.TechDiploma);
+          result3[fileIndex].Graduate = parseInt(result3[fileIndex].Graduate)+parseInt(obj.Graduate);
+          result3[fileIndex].Unclassified = parseInt(result3[fileIndex].Unclassified)+parseInt(obj.Unclassified);
         }
         }
     }
