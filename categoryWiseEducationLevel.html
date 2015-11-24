@@ -48,9 +48,11 @@
 <body>
   <script>
     d3.json("json3.json", function(err,data){
+
       var margin = {top: 20, right: 20, bottom: 170, left: 100},
           width = 1016 - margin.left - margin.right,
           height = 700 - margin.top - margin.bottom,
+          seriesNames = ["GE","SC","ST"],
           x0 = d3.scale.ordinal()
                   .rangeRoundBands([0, width], .1),
           x1 = d3.scale.ordinal(),
@@ -70,14 +72,13 @@
                   .append("g")
                   .attr("transform", "translate(" + margin.left + "," + margin.top + ")"),
           seriesKeys = d3.keys(data[0]).filter(function (key) { return (key !== "tableName"); }),
-          data1 = [{}],
-          seriesNames = ["GE","SC","ST"],
-          var tip = d3.tip()
+          data1 = [],
+          tip = d3.tip()
                       .attr('class', 'd3-tip')
                       .offset([-10, 0])
                       .html(function(d) {
                         return "<strong>Population:</strong> <span style='color:red'>" + d.value + "</span>";
-                      })
+                      });
       svg.call(tip);
 
       for (var i = 0; i < parseInt(seriesKeys.length); i++) {
@@ -115,7 +116,7 @@
           .attr("x", -100)
           .attr("dy", ".71em")
           .style("text-anchor", "end")
-          .text("Graduate Male And Female");
+          .text("Population");
 
       var state = svg.selectAll(".state")
                       .data(data1)
