@@ -1,0 +1,20 @@
+a{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+body{
+  text-align: center;
+}
+a>button{
+  padding: 10px;
+  font-size: 16px;
+  background-color: blue;
+  color: white;
+}
+
+a>button:hover{
+  cursor: pointer;
+}
